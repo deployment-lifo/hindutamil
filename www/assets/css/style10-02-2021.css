@@ -1,0 +1,153 @@
+.photo-browser-popup .photo-browser-caption{ pointer-events: auto !important;}
+.photo-browser-caption .share_news ul{ position: inherit!important; right: inherit!important; top: inherit!important; }
+/*.photo-browser-popup .photo-browser-caption{pointer-events: auto !important;}*/
+#mybook{width:100%;height:450px !important;}
+.pulling-refresh{margin-top: 50px;}
+.homepage-ad1{height: 300px !important;width:250px !important;margin: 0 auto !important;line-height: 300px;text-align: center;}
+.error{color: red;}
+html { overflow-y: scroll;-webkit-overflow-scrolling: touch; }
+.view .page,.panel.panel-left{margin-top:env(safe-area-inset-top,-50px) !important;margin-top:constant(safe-area-inset-top,-50px) !important}
+.toolbar-bottom{margin-bottom:env(safe-area-inset-top,-50px);}
+
+.comment-button { color:#00569d !important};
+
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */ 
+  .iOS-device { display:block; }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  /* CSS for other than iOS devices */ 
+  .iOS-device { display:none }
+}
+
+.no-internet{ background:#fff; text-align: center; padding: 30px;}
+.no-internet img { max-width: 120px; margin: 40% auto 10px; }
+.no-internet h3{ margin: 0 0 20px; font-size: 30px; color: #555;}
+.no-internet p{ color: #777; }
+.sheet-modal.notification-sheet-modal img{width: 100% !important;}
+.sheet-modal.notification-sheet-modal .sheet-modal-inner{height: 90% !important;}
+.sheet-modal.notification-sheet-modal .card{box-shadow: none !important;}
+.ios .notification-sheet-modal .toolbar,.ios .notification-sheet-modal .card-header{background-color:#00569d !important; color: #FFF !important;}
+.ios .sheet-modal-top{margin-top: env(safe-area-inset-top) !important;}
+.app-help-info{font-size: 10px;color: #FF0000 !important;text-transform: uppercase;}
+.photo-browser-caption{margin-bottom:env(safe-area-inset-bottom,80px);}
+.photo-browser-caption .share_news{position: absolute;top: -40px;left: 44%;z-index: 99999;-webkit-transform: translateX(-50%);
+transform: translateX(-50%)}
+.photo-browser .navbar-inner a.link.popup-close{font-size: 38px !important;}
+.item-input-wrap .eye {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    opacity: 0.5;
+    font-size: 25px;
+}
+.ios .login-screen-content{margin-top: env(safe-area-inset-top) !important;}
+.datepicker.datepicker-dropdown{position: absolute;background: #F7F7F7 !important;z-index: 99999 !important;}
+
+
+#upload-button {
+	width: 150px;
+	display: block;
+	margin: 20px auto;
+}
+
+#file-to-upload {
+	display: none;
+}
+
+#pdf-main-container {
+	/*width: 600px;*/
+	margin: 20px auto;
+}
+
+#pdf-loader {
+	display: none;
+	text-align: center;
+	color: #999999;
+	font-size: 13px;
+	line-height: 100px;
+	height: 100px;
+}
+
+#password-container {
+	padding: 50px 0;
+	box-sizing: border-box;
+	text-align: center;
+	display: none;
+}
+
+#pdf-password {
+	border: 1px solid #cccccc;
+	padding: 5px;
+	margin: 0 10px 0 0;
+	width: 100px;
+}
+
+#submit-password {
+	background: none;
+	border: 1px solid #cccccc;
+	padding: 4px;
+}
+
+#password-message {
+	text-align: center;
+	color: red;
+	margin: 10px 0 0 0;
+	font-size: 13px;
+}
+
+#pdf-contents {
+	display: none;
+}
+
+#pdf-meta {
+	overflow: hidden;
+	margin: 0 0 20px 0;
+}
+
+#pdf-buttons {
+	float: left;
+}
+
+#page-count-container {
+	float: right;
+}
+
+#pdf-current-page {
+	display: inline;
+}
+
+#pdf-total-pages {
+	display: inline;
+}
+
+#pdf-canvas {
+	border: 1px solid rgba(0,0,0,0.2);
+	box-sizing: border-box;
+}
+
+#page-loader {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	display: none;
+	color: #999999;
+	font-size: 13px;
+}
+.page-content.book-reader-page{background: #fff !important;}
+.pdf-toolbar .button{padding:0 2px !important;}
+.touchPDF > .pdf-outerdiv > .pdf-toolbar{text-align: center !important;}
+.pdf-toolbar .pdf-button{margin-right: 20px !important;}
+.pdf-toolbar{ height:50px !important; top:-5px !important;}
+.pdf-toolbar .pdf-button .button i{font-size: 20px;}
+.pdf-toolbar .pdf-button .pdf-page-count{font-size: 24px;font-weight: bold;}
+
+.offline-button {padding : 0 9px !important;}
+.e-paper-track-button { display: flex;justify-content: space-evenly;margin-top: 10px; }
+.menu-float-icon {height: 48px !important; width: 48px !important;border-radius: 50% !important;}
+/*.pt-0{padding-top:0 !important }
+.touchPDF > .pdf-outerdiv > div{top: inherit !important;}
+.pdf-toolbar{position: fixed !important;bottom: 0px !important;z-index: 9999 !important;background: #00569d !important;top: inherit !important;}*/
+.pinch-zoom-container {position:static !important;}
+.ios .subscription-page{padding-top:calc(var(--f7-page-navbar-offset,0px) + var(--f7-page-toolbar-top-offset,-17px) + var(--f7-page-subnavbar-offset,0px) + var(--f7-page-searchbar-offset,0px) + var(--f7-page-content-extra-padding-top,0px)) !important}

@@ -1,0 +1,87 @@
+{
+  "project_info": {
+    "project_number": "4090434366",
+    "firebase_url": "https://hindutamil-1575222069005.firebaseio.com",
+    "project_id": "hindutamil-1575222069005",
+    "storage_bucket": "hindutamil-1575222069005.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4090434366:android:dcdc135b51072ea1cfd26f",
+        "android_client_info": {
+          "package_name": "com.news.hindutamil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4090434366-3gnk9tpibj179q6cbescbamv900ioqj2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.news.hindutamil",
+            "certificate_hash": "08b26866e4bdd8782b12df670795b005fb14cc01"
+          }
+        },
+        {
+          "client_id": "4090434366-8aaid8sd95tp70v8k76enujls3hbbq08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.news.hindutamil",
+            "certificate_hash": "efe2c7a36adcff0be4c5f49fa4cc99099aeb9e70"
+          }
+        },
+        {
+          "client_id": "4090434366-co7urnma840lsffclld9a4if9jugp9ld.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.news.hindutamil",
+            "certificate_hash": "e564f1d41e87af24aedcdfe706f73fc0122905bb"
+          }
+        },
+        {
+          "client_id": "4090434366-f014pa526kjt5g89u447hkevcq0aor78.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.news.hindutamil",
+            "certificate_hash": "92bdc665dbd81fee7061af6afa40c40ecc09a25d"
+          }
+        },
+        {
+          "client_id": "4090434366-salrrgtc6fs2v97pqcec1b6s02qifno9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.news.hindutamil",
+            "certificate_hash": "f91f5eb2b530a729e3befd2d68cafb61798204fb"
+          }
+        },
+        {
+          "client_id": "4090434366-njin42fm1m45v937q5e4s3u4oil83kto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTlAocNmrkOByO9yi8r8wziaRVqa6FGPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4090434366-cf7j35vreb34mkb67od0cp4bahkfr4nl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "4090434366-0nm2nkiotb1ioj2rbtpofo8p8qbdfk2m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appid.hindutamil"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

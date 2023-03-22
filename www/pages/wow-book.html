@@ -1,0 +1,105 @@
+<div class="page" data-name="wow-book">
+ 
+  
+  <div class="popover popover-links popover-viewer">
+	<div class="popover-inner">
+	  <div class="list">
+		<ul>
+		  <li><a class="list-button item-link popover-close saveFileOffline" href="#"><i class="fa fa-book-open"></i> Save to library</a></li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+<div class="toolbar toolbar-bottom epub-toolbar">
+  <div class="toolbar-inner">
+    <a href="javascript:void(0)" id="prev" class="link"><i class="fa fa-arrow-left"></i></a>
+    <a href="javascript:void(0)" id="next" class="link"><i class="fa fa-arrow-right"></i></a>
+    <a href="javascript:void(0)" id="" class="link saveFileOffline showDownLoadButton" style="display:none;"><i class="fa fa-download"></i></a>
+    <a href="#" class="back link"><i class="fa fa-times"></i></a>
+    <a href="epubcfi(/6/24[title11]!/4/16/1:0)" style="display: none;" class="last_page_cfi">Last Page</a>
+  </div>
+</div>
+  <div class="page-content p-0">
+     
+      
+    <!---<div class="wow_toolbar"></div><div class="book_holder"><div id="book_container" class="book_section"><div id="bookView"></div></div></div>--->
+	<!---<div id="my_pdf_viewer">
+        <div id="canvas_container">
+            <canvas id="pdf_renderer"></canvas>
+        </div>
+ 
+        <div id="navigation_controls">
+            <button id="go_previous">Previous</button>
+            <input id="current_page" value="1" type="number"/>
+            <button id="go_next">Next</button>
+        </div>
+ 
+        <div id="zoom_controls">  
+            <button id="zoom_in">+</button>
+            <button id="zoom_out">-</button>
+        </div>
+    </div>-->
+	<div id="sidebar">
+        <div id="panels">
+          <!-- <input id="searchBox" placeholder="search" type="search"> -->
+          <span class="text-color-white" style="margin-left: 20px;">அட்டவணை </span>
+
+          <!-- <a id="show-Search" class="show_view icon-search" data-view="Search">Search</a> -->
+         <!--  <a id="show-Toc" class="show_view active" data-view="Toc"><i class="fa fa-list"></i> Index</a> -->
+          <!-- <a id="show-Bookmarks" class="show_view " data-view="Bookmarks"><i class="fa fa-bookmark"></i></a>
+          <a id="show-Notes" class="show_view" data-view="Notes"><i class="fa fa-sticky-note"></i></a> -->
+
+        </div>
+        <div id="tocView" class="viewss">
+        </div>
+        <div id="searchView" class="viewss">
+          <ul id="searchResults"></ul>
+        </div>
+        <div id="bookmarksView" class="viewss">
+          <ul id="bookmarks"></ul>
+        </div>
+        <div id="notesView" class="viewss">
+          <div id="new-note">
+            <textarea id="note-text"></textarea>
+            <button id="note-anchor">Anchor</button>
+          </div>
+          <ol id="notes"></ol>
+        </div>
+      </div>
+      <div id="main" class="epub-container">
+
+        <div id="titlebar">
+          <div id="opener">
+            <a id="slider" class=""><i class="fa fa-bars"></i>Menu</a>
+          </div>
+          <div id="metainfo">
+            <span class="bookTitle"></span>
+            <!-- <span id="title-seperator">-</span>
+            <span id="chapter-title"></span> -->
+          </div>
+        <!--  <div id="title-controls">
+            <a href="#" class="back"><i class="fa fa-times"></i></a>
+          </div> -->
+        </div>
+
+        <div id="divider"></div>
+        <div id="viewer" class="e-book-pinch-zoom epub-viewer"></div>
+
+        <div id="loader"><img src="img/loader.gif"></div>
+      </div>
+      <div class="modal md-effect-1" id="settings-modal">
+          <div class="md-content">
+              <h3>Settings</h3>
+              <div>
+                  <p>
+                    <input type="checkbox" id="sidebarReflow" name="sidebarReflow">Reflow text when sidebars are open.
+                  </p>
+              </div>
+              <div class="closer icon-cancel-circled"></div>
+          </div>
+      </div>
+      <div class="overlay"></div>
+  
+  </div>
+  
+</div>

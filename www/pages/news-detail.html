@@ -1,0 +1,142 @@
+<div class="page" data-name="news-detail">
+    <div class="navbar no-shadow">
+        <div class="navbar-bg bg-color-white"></div>
+        <div class="navbar-inner">
+            <div class="left">
+                <!--<a href="#" class="link icon-only " onclick="navigateBack()">-->
+                <a href="#" class="link icon-only newdetails" data-cur-page="" onclick="navigateBack()">
+                    <i class="fa fw fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="title addTitle"></div>
+            <div class="right">
+                <!-- <a href="#" class="link shareLink"><i class="fa fa-share-alt"></i></a> 
+                <a href="javascript:;" class="link icon-only"><i class="fa fa-volume-up speakAudio"></i></a> -->
+                <a href="#" class="link popover-open icon-only" data-popover=".popover-links"><i class="fa fa-ellipsis-v"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="ad-content ad_placement_1"></div>
+        <!-- <ins id="dispads_00001" data-adspot-key="718qm460" data-source="com.news.hindutamil" data-refresh-rate="30" data-isclick-listener-attached="true" data-fcap="17053"></ins> -->
+        <div class="card news-detail-card addNewsDetailHeader">
+        </div>
+        <div class="ad-content ad_placement_2"></div>
+        <div class="block block-sm">
+            <div class="news_detail_desc newsDetailDescription unblur-content">
+                <!--<div class="magazine-overlay" style="display: block;">
+                    <div class="row">
+                      <div class="col-100">
+                        <a class="button button button-raised button-large w100 color-blue">Sign in to read more</a>
+                      </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <div class="block block-sm commentButton">
+        </div>
+        <div class="ad-content ad_placement_3"></div>
+        <div class="block-title">
+            <h2>Related Article</h2>
+        </div>
+        <div class="ad-content ad_placement_4"></div>
+        <div class="list media-list news-list related-list">
+            <ul class="appendRelatedArticle">
+            </ul>
+        </div>
+    </div>
+
+    <div class="sheet-modal postNewsComment">
+        <div class="toolbar">
+            <div class="toolbar-inner">
+                <div class="left"><a class="link sheet-close closeComment comment-button" href="javascript:void(0)">Close</a></div>
+                <!-- <div class="right"><a class="link sheet-close postForReply comment-button" href="javascript:void(0)">Post</a></div> -->
+            </div>
+        </div>
+        <div class="sheet-modal-inner postCommentWithoutLogin">
+            <div class="block mn">
+                <h2>What is in your mind?</h2>
+                <ul class="emoji">
+                </ul>
+                <input type="hidden" id="comment_id" value="0"/>
+                <textarea class="form-control" name="" id="replyForComment" rows="10" placeholder="Max 300 Charaters"></textarea>
+                <div class="postCommentWithoutLogin"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popover font-settings">
+        <div class="popover-inner">
+            <div class="list">
+                <ul class="fontSettingsPopOver">
+                    <li>
+                        <label class="item-radio item-radio-icon-end item-content">
+                            <input type="radio" class="fontChange fontChange1" name="demo-radio-end" value="font-small"/>
+                            <i class="icon icon-radio"></i>
+                            <div class="item-inner">
+                                <div class="item-title">Small</div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="item-radio item-radio-icon-end item-content">
+                            <input type="radio" class="fontChange fontChange2" name="demo-radio-end" value="font-medium"/>
+                            <i class="icon icon-radio"></i>
+                            <div class="item-inner">
+                                <div class="item-title">Medium</div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="item-radio item-radio-icon-end item-content">
+                            <input type="radio" class="fontChange fontChange3" name="demo-radio-end" value="font-large" />
+                            <i class="icon icon-radio"></i>
+                            <div class="item-inner">
+                                <div class="item-title">Large</div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+                <a href="#" class="button button-fill button-small button-block popover-close">Close</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="popover popover-links">
+        <div class="popover-inner">
+            <div class="list">
+                <input type="hidden" id="mid" value="0" />
+                <input type="hidden" id="aid" value="0"/>
+                <input type="hidden" id="web_url" value="0"/>
+                <input type="hidden" id="msg" value="0"/>
+                <ul class="navToCommentPage">
+                    <li>
+                        <a href="javascript:;" data-article-type="" class="list-button item-link navToCommentAddPage" ><i class="fa fa-comments"></i>Comments</a>
+                    </li>
+                    <li class="saveBookMark">
+                        <a class="list-button item-link" href="#"><i class="fa fa-bookmark"></i>Bookmark</a>
+                    </li>
+                    <li class="saveOffLineStory" data-article-type="">
+                        <a class="list-button item-link" href="#"><i class="fa fa-download"></i>Offline Story</a>
+                    </li>
+                    <li class="popover-open" data-popover=".font-settings">
+                        <a class="list-button item-link popover-close" href="#"><i class="fa fa-font"></i>Font Settings</a>
+                    </li>
+                    <!---<li class="speakAudio"><a class="list-button item-link" href="#"><i class="fa fa-download"></i>Play Audio</a></li>--->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="fab fab-right-bottom controls-float">
+        <a href="javascript:void(0);" class="playButton speechFunction">
+            <i class="fa fw fa-play"></i>
+        </a>
+    </div>-->
+
+    <div class="toolbar tabbar tabbar-labels toolbar-bottom toolbar-details">
+        <div class="toolbar-inner addBottomTab">
+        </div>
+    </div>
+</div>

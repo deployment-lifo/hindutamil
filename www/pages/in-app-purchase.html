@@ -1,0 +1,139 @@
+<div class="page" data-name="in-app-purchase">
+
+  <div class="navbar no-shadow">
+    <div class="navbar-bg bg-color-white"></div>
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link icon-only" onclick="navigateBack()">
+          <i class="fa fw fa-arrow-left"></i>
+        </a>
+      </div>
+      <div class="title">சந்தாக்கள்</div>
+      <div class="right">
+        <!---<a href="#" class="link popover-open" data-popover=".popover-links"><i class="fa fa-ellipsis-v"></i></a>--->
+        
+      </div>
+      <div class="subnavbar no-shadow">
+        <div class="toolbar toolbar-top tabbar news-tabs in-app-purchase-tab">
+          <div class="toolbar-inner">
+            <a href="#in-app-epaper-tab" class="tab-link tab-link-active getInAppPurchase" data-type="e-paper">E-Papers</a>
+            <a href="#in-app-ebook-tab" class="tab-link getInAppPurchase" data-type="e-book">E-Books</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popover popover-links">
+    <div class="popover-inner">
+      <div class="list">
+        <ul>
+          <li><a class="list-button item-link popover-close" href="/e-library/"><i class="fa fa-book-open"></i>e-library</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="page-content subscription-page">
+    <div class="tabs">
+      <div class="tab tab-active" id="in-app-epaper-tab">
+        <div class="in-app-e-paper block">
+        </div>
+      </div>
+      <div class="tab" id="in-app-ebook-tab">
+            <h4><a href="javascript:;" class="pull-right heading10 showInAppPurchaseSearch">
+              <i class="fa fa-search"></i> Search</a>
+            </h4>
+          <div class="clearfix"></div>
+        <div class="in-app-e-book block mt-0">
+          
+        </div>
+      </div>       
+    </div>
+
+    <div class="row">
+      <div class="list no-hairlines-md showInAppSearch" style="display:none;">
+        <ul>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Title</div>
+              <div class="item-input-wrap">
+                <input type="text" placeholder="Enter title" class="inAppPurchaseTitle"/>
+                <span class="input-clear-button"></span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="row">
+          <a href="" class="col button button-fill color-gray inAppPurSearchClear">Clear</a>
+          <a href="javascript:;" class="col button button-fill inAppPurSearchResult">Submit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="popup book-search">
+      <div class="view">
+        <div class="page">
+          <div class="navbar no-shadow">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="left">
+                <a href="#" class="link icon-only popup-close">
+                  <i class="fa fw fa-arrow-left"></i>
+                </a>
+              </div>
+              <div class="title">Book Search</div>
+              <div class="right">
+                <a class="link popup-close"><i class="fa fw fa-times-circle"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="list no-hairlines-md">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Title</div>
+                    <div class="item-input-wrap">
+                      <input type="text" placeholder="Enter title" class="eBookTitle"/>
+                      <span class="input-clear-button"></span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Author</div>
+                    <div class="item-input-wrap">
+                      <input type="text" placeholder="Enter author" class="eBookAuthor"/>
+                      <span class="input-clear-button"></span>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Choose Category</div>
+                    <div class="item-input-wrap input-dropdown-wrap">
+                      <select placeholder="Please choose category" class="eBookCategory">
+            <option value="">Please choose category</option>
+                        <option value="1">Category 01</option>
+                        <option value="2">Category 02</option>
+                      </select>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+            <div class="block block-sm">
+              <div class="row">
+                <a href="" class="col button button-fill color-gray eBookSearchClear">Clear</a>
+                <a href="javascript:;" class="col button button-fill eBookSearchResult">Submit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+</div>

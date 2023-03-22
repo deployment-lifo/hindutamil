@@ -1,0 +1,163 @@
+<div class="page" data-name="e-subscription">
+
+  <div class="navbar no-shadow">
+    <div class="navbar-bg bg-color-white"></div>
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link icon-only" onclick="navigateBack()">
+          <i class="fa fw fa-arrow-left"></i>
+        </a>
+      </div>
+      <div class="title">E-Products</div>
+      <div class="right">
+        <!---<a href="#" class="link popover-open" data-popover=".popover-links"><i class="fa fa-ellipsis-v"></i></a>--->
+		<a href="/e-library/" class="link icon-only">
+          <i class="fa fa-book-reader"></i>
+        </a>
+      </div>
+      <div class="subnavbar no-shadow">
+        <div class="toolbar toolbar-top tabbar news-tabs">
+          <div class="toolbar-inner">
+            <a href="#epaper-tab" class="tab-link tab-link-active e-papers-tab" data-type="e-paper">E-Papers</a>
+            <!-- <a href="#emagazine-tab" class="tab-link e-papers-tab" data-type="e-magazine">E-Magazines</a> -->
+            <a href="#ebook-tab" class="tab-link e-papers-tab" data-type="e-book">E-Books</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popover popover-links">
+    <div class="popover-inner">
+      <div class="list">
+        <ul>
+          <li><a class="list-button item-link popover-close" href="/e-library/"><i class="fa fa-book-open"></i>e-library</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+	
+  <div class="page-content subscription-page">
+    <div class="tabs">
+      <div class="tab tab-active" id="epaper-tab">
+        <!---<div class="subscribe-overlay">
+          <a href="#" class="button button-large button-fill color-green"><i class="fa fa-bell"></i> Try 15 Days Free Trail</a>
+        </div>-->
+        <!---<p class="validity">your subscription is valid upto <strong>13.01.2022</strong></p>
+        <div class="block block-sm">
+          <div class="row">
+            <div class="col-50">
+               <select placeholder="Choose Edition" class="form-control custom-select">
+                  <option value="">Chennai</option>
+                  <option value="">Salem</option>
+                  <option value="">Trichy</option>
+                  <option value="">Madhurai</option>
+                  <option value="">Coimbatore</option>
+               </select>
+            </div>
+            <div class="col-50">
+              <input type="date" value="2021-01-13" placeholder="Please choose..." class="form-control" />
+            </div>
+          </div>
+
+          <a href="/book-viewer/" class="epaper-link"><img src="assets/images/e-paper.jpg" alt=""/></a>
+        </div>--->
+      </div>
+      <div class="tab" id="emagazine-tab">
+        
+        
+      </div>
+
+      <!---<div class="popover popover-links popover-viewer">
+        <div class="popover-inner">
+          <div class="list">
+            <ul>
+              <li><a class="list-button item-link popover-close" href="#"><i class="fa fa-book-open"></i> Save Offline</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>--->
+
+      <div class="tab" id="ebook-tab">
+        <div class="block block-sm">
+		<div class="eBookAds">
+				
+			</div>
+			
+			<div class="purchasedBooks">
+				
+			</div>
+          <div class="buyNewBooks">
+			
+		  </div>
+          
+        </div>
+      </div>       
+    </div>
+  </div>
+
+	<div class="popup book-search">
+      <div class="view">
+        <div class="page">
+          <div class="navbar no-shadow">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="left">
+                <a href="#" class="link icon-only popup-close">
+                  <i class="fa fw fa-arrow-left"></i>
+                </a>
+              </div>
+              <div class="title">Book Search</div>
+              <div class="right">
+                <a class="link popup-close"><i class="fa fw fa-times-circle"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="list no-hairlines-md">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Title</div>
+                    <div class="item-input-wrap">
+                      <input type="text" placeholder="Enter title" class="eBookTitle"/>
+                      <span class="input-clear-button"></span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Author</div>
+                    <div class="item-input-wrap">
+                      <input type="text" placeholder="Enter author" class="eBookAuthor"/>
+                      <span class="input-clear-button"></span>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Choose Category</div>
+                    <div class="item-input-wrap input-dropdown-wrap">
+                      <select placeholder="Please choose category" class="eBookCategory">
+						<option value="">Please choose category</option>
+                        <option value="1">Category 01</option>
+                        <option value="2">Category 02</option>
+                      </select>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+            <div class="block block-sm">
+              <div class="row">
+                <a href="" class="col button button-fill color-gray eBookSearchClear">Clear</a>
+                <a href="javascript:;" class="col button button-fill eBookSearchResult">Submit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

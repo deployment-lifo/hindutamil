@@ -1,0 +1,142 @@
+<div class="page" data-name="settings">
+  <div class="navbar no-shadow">
+    <div class="navbar-bg bg-color-white"></div>
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="javascript:void(0)" class="link icon-only" onclick="forceBack()">
+          <i class="fa fw fa-arrow-left"></i>
+        </a>
+      </div>
+      <div class="title">Settings</div>
+      <div class="right">
+        <a href="#" class="link icon-only"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="list mn settings-links">
+      <ul class="versions">
+        <li data-page="profile" class="hideNotLogin" style="display: none;">
+          <a href="/profile" class="item-link item-content">
+            <div class="item-media"><i class="icon fa fa-user"></i></div>
+            <div class="item-inner">
+              <div class="item-title">Profile</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/font-settings/" class="item-link item-content">
+            <div class="item-media"><i class="icon fa fa-font"></i></div>
+            <div class="item-inner">
+              <div class="item-title">Font Settings</div>
+            </div>
+          </a>
+        </li>
+        <li data-page="change_password" class="hideNotLogin" style="display: none;">
+          <a href="/change-password" class="item-link item-content">
+            <div class="item-media"><i class="icon fa fa-key"></i></div>
+            <div class="item-inner">
+              <div class="item-title">Change Password</div>
+            </div>
+          </a>
+        </li>
+        <li data-page="feedback" class="">
+          <a href="/feedback" class="item-link item-content">
+            <div class="item-media"><i class="icon fa fa-pen-nib"></i></div>
+            <div class="item-inner">
+              <div class="item-title">Feedback</div>
+            </div>
+          </a>
+        </li>
+        <li data-page="rate_this_app" class="navToRespectivePage">
+          <a href="javascript:void(0)" class="item-link item-content">
+            <div class="item-media"><i class="icon fa fa-star"></i></div>
+            <div class="item-inner">
+              <div class="item-title">Rate this App</div>
+            </div>
+          </a>
+        </li>
+        <li data-page="terms_cond" class="">
+          <a href="/terms" class="item-link item-content">
+            <div class="item-media"><i class="icon fa fa-file-alt"></i></div>
+            <div class="item-inner">
+              <div class="item-title">Terms &amp; Conditions</div>
+            </div>
+          </a>
+        </li>
+		    <li data-page="storage-location" class="showStorageLocation" style="display: none;">
+          <a href="javascript:void(0)" class="item-link item-content">
+            <div class="item-media"><i class="icon fa fa-compact-disc"></i></div>
+            <div class="item-inner">
+              <div class="item-title">Storage Location</div>
+            </div>
+          </a>
+        </li>
+        <li data-page="clear_cache" class="clearCache">
+          <a href="javascript:void(0)" class="item-link item-content">
+            <div class="item-media"><i class="icon fa fa-trash"></i></div>
+            <div class="item-inner">
+              <div class="item-title">Clear Cache</div>
+            </div>
+          </a>
+        </li>
+        <li data-page="logout" class="navToRespectivePage hideNotLogin" style="display: none;">
+          <a href="javascript:void(0)" class="item-link item-content">
+            <div class="item-media"><i class="icon fa fa-power-off"></i></div>
+            <div class="item-inner">
+              <div class="item-title">Logout</div>
+            </div>
+          </a>
+        </li>
+        <!-- <li data-page="version" class="navToRespectivePage">
+          <div class="item-content">
+            <div class="item-media"><i class="icon fa fa-info-circle"></i></div>
+            <div class="item-inner">
+              <div class="item-title">Version - 1.0.3</div>
+            </div>
+          </div>
+        </li> -->
+      </ul>
+	  </div>
+  </div>
+
+  <!-- Storage Popup -->
+    <div class="popup storage-popup file-storage-location popup-tablet-fullscreen">
+      <div class="view">
+        <div class="page">
+          <div class="page-content">
+             <div class="storage-box">
+                <h5>Change Storage Location</h5>             
+                 <div class="list">
+                    <ul class="showMemorycardOption">
+                      <!-- <li>
+                        <label class="item-radio item-content">
+                          <input type="radio" name="my-radio" value="radio-1"/>
+                          <i class="icon icon-radio"></i>
+                          <div class="item-inner">
+                            <div class="item-title">Internal Storage</div>
+                          </div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="item-radio item-content">
+                          <input type="radio" name="my-radio" value="radio-2" checked/>
+                          <i class="icon icon-radio"></i>
+                          <div class="item-inner">
+                            <div class="item-title">SD Card</div>
+                          </div>
+                        </label>
+                      </li> -->
+                    </ul>
+                  </div>
+                  <p><a class="link popup-close">Close</a></p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
+  
+</div>

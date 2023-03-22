@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#00569d">
+    <title>Hindu Tamil</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/framework7.bundle.min.css">
+	  <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/css/my-app.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<!-- E-pub reader
+    <link rel="stylesheet" href="assets/css/epub-lib/normalize.css">
+	<link rel="stylesheet" href="assets/css/epub-lib/main.css">
+	<link rel="stylesheet" href="assets/css/epub-lib/popup.css">-->
+	<link rel="stylesheet" href="assets/css/epub-lib/normalize.css">
+	<link rel="stylesheet" href="assets/css/epub-lib/main.css">
+	
+	<!-- E-pub reader-->
+	<!-- Pdf reader-->
+	<link rel="stylesheet" href="assets/css/pdf-lib/jquery.touchPDF.css">
+	<!-- Pdf reader-->
+	<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  
+</head>
+  <body class="color-theme-blue" onload="onLoad()">
+    <div id="player"></div>
+    <div id="app">
+
+	<!--<div class="fab fab-right-bottom fab-opened e-fab-icons" style="height: 15%;margin: 20px;position: absolute; bottom: -40px;">
+		<div class="fab-buttons fab-buttons-top">
+			<a class="fab-label-button menu-float-icon" href="/e-library/"><span><i class="fa fa-book-reader" style="font-size: 20px;"></i></span></a>
+			<a class="fab-label-button menu-float-icon" href="/e-subscription/"><span><i class="fa fa-laptop" style="font-size: 20px;"></i></span></a>
+		</div>
+	</div>-->
+
+
+    
+
+      <div class="page-content" data-ptr-distance="55">
+    
+      
+      <div class="statusbar"></div>
+
+      <div class="panel panel-left panel-cover">
+        <div class="account-header bg-color-blue showUserName">
+          <!-- <h5 class="user-name "></h5>
+          <a href="/settings/" class="setting-icon panel-close"><i class="fa fa-cog"></i></a>
+          <a href="#" data-login-screen=".my-login-screen" class="mt-16 button button-small button-block button-round button-outline color-white panel-close login-screen-open">LOGIN OR REGISTER</a> -->
+        </div>
+        <div class="row sub-header-links no-gap">
+          <a class="link col panel-close" href="/saved/">
+            <i class="icon fa fa-download"></i>
+            <span>Saved</span>
+          </a>
+          <a class="link col panel-close navToRespectivePage" data-page="bookmark" href="javascript:void(0)">
+            <i class="icon fa fa-bookmark"></i>
+            <span>Bookmarks</span>
+          </a>
+          <a class="link col panel-close" href="/settings/">
+            <i class="icon fa fa-cog"></i>
+            <span>Settings</span>
+          </a>
+		 
+        </div>
+		
+
+        <!-- <form id="myForm">
+          <input type="radio" name="radioName" value="1" /> 1 <br />
+          <input type="radio" name="radioName" value="2" /> 2 <br />
+          <input type="radio" name="radioName" value="3" /> 3 <br />
+        </form> -->
+        <div class="block mn">
+          <div class="list menu-list appendAllMenus">
+            <!-- <ul>
+              <li>
+                <a href="/" class="panel-close item-link item-content">
+                  <div class="item-media"><i class="fa fw fa-home"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">முகப்பு</div> 
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/e-subscription/" class="panel-close item-link item-content">
+                  <div class="item-media"><i class="fa fw fa-laptop"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">இ-பேப்பர்</div>
+                  </div>
+                </a>
+              </li>
+              <li class="has-submenu">
+                <a href="#" class="item-link item-content menu-links-head">
+                  <div class="item-media"><i class="fa fw fa-newspaper"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">செய்திகள்</div>
+                  </div>                    
+                </a>
+                <ul class="submenu">
+                  <li class="panel-close"><a href="#">தமிழகம் </a></li>
+                  <li class="panel-close"><a href="#">இந்தியா </a></li>
+                  <li class="panel-close"><a href="#">விளையாட்டு </a></li>
+                  <li class="panel-close"><a href="#">உலகம் </a></li>
+                  <li class="panel-close"><a href="#">வணிகம் </a></li> 
+                  <li class="panel-close"><a href="#">தொழில்நுட்பம் </a></li>
+                  <li class="panel-close"><a href="#">க்ரைம் </a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a href="#" class="item-link item-content menu-links-head">
+                  <div class="item-media"><i class="fa fw fa-comments"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">கருத்துப் பேழை </div>
+                  </div>                    
+                </a>
+                <ul class="submenu">
+                  <li class="panel-close"><a href="#">தலையங்கம்</a></li> 
+                  <li class="panel-close"><a href="#">சிறப்புக் கட்டுரைகள்</a></li> 
+                  <li class="panel-close"><a href="#">இப்படிக்கு இவர்கள்</a></li>
+                  <li class="panel-close"><a href="#">கார்ட்டூன்</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a href="#" class="item-link item-content menu-links-head">
+                  <div class="item-media"><i class="fa fw fa-film"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">சினிமா</div>
+                  </div>                    
+                </a>
+                <ul class="submenu">
+                  <li class="panel-close"><a href="#">தமிழ் சினிமா</a></li>
+                  <li class="panel-close"><a href="#">தென்னிந்திய சினிமா</a></li>
+                  <li class="panel-close"><a href="#">பாலிவுட்</a></li>
+                  <li class="panel-close"><a href="#">ஹாலிவுட்</a></li>
+                  <li class="panel-close"><a href="#">உலக சினிமா</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a href="#" class="item-link item-content menu-links-head">
+                  <div class="item-media"><i class="fa fw fa-newspaper"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">இணைப்பிதழ்கள்</div>
+                  </div>                    
+                </a>
+                <ul class="submenu">
+                  <li class="panel-close"><a href="#">வணிக வீதி</a></li> 
+                  <li class="panel-close"><a href="#">வெற்றிக் கொடி</a></li>
+                  <li class="panel-close"><a href="#">மாயா பஜார்</a></li>
+                  <li class="panel-close"><a href="#">ஆனந்த ஜோதி</a></li>
+                  <li class="panel-close"><a href="#">இளமை புதுமை</a></li>
+                  <li class="panel-close"><a href="#">இந்து டாக்கீஸ்</a></li>
+                  <li class="panel-close"><a href="#">நலம் வாழ</a></li>
+                  <li class="panel-close"><a href="#">உயிர் மூச்சு</a></li>
+                  <li class="panel-close"><a href="#">சொந்த வீடு</a></li>
+                  <li class="panel-close"><a href="#">பெண் இன்று</a></li>
+                  <li class="panel-close"><a href="#">ஆறாம் அறிவு</a></li>
+                  <li class="panel-close"><a href="#">திசைகாட்டி</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a href="#" class="item-link item-content menu-links-head">
+                  <div class="item-media"><i class="fa fw fa-gopuram"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">ஆன்மிகம்</div>
+                  </div>                    
+                </a>
+                <ul class="submenu">
+                  <li><a href="#" class="panel-close">ஜோதிடம்</a></li>
+                </ul>
+              </li>
+              <li class="panel-close">
+                <a href="/albums/" class="item-link item-content">
+                  <div class="item-media"><i class="fa fw fa-images"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">ஆல்பம்</div>
+                  </div>                    
+                </a>
+              </li>
+              <li class="panel-close">
+                <a href="/videos/" class="item-link item-content">
+                  <div class="item-media"><i class="fa fw fa-play"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">வீடியோ</div>
+                  </div>                    
+                </a>
+              </li>
+              <li class="has-submenu">
+                <a href="#" class="item-link item-content menu-links-head">
+                  <div class="item-media"><i class="fa fw fa-th-large"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">மேலும்</div>
+                  </div>                    
+                </a>
+                <ul class="submenu">
+                  <li class="panel-close"><a href="#">சமையல் </a></li> 
+                  <li class="panel-close"><a href="#">சமூக வலைதளம் </a></li> 
+                  <li class="panel-close"><a href="#">இலக்கியம் </a></li>
+                  <li class="panel-close"><a href="#">விவாதக் களம் </a></li>
+                  <li class="panel-close"><a href="#">வலைஞர் பக்கம் </a></li>
+                  <li class="panel-close"><a href="#">தொடர்கள் </a></li>
+                </ul>
+              </li>
+            </ul> -->
+          </div>
+          <div class="clearfix"></div>          
+        </div>
+        <p class="version"></p>
+      </div>
+
+      <div class="view view-main">
+        <div data-name="home" class="page page-with-subnavbar ">
+		asfasdf
+		asddfsadfs
+		asdf
+		<p>
+			<!-- JioAds slot - 2 -->
+			<ins id="ADSREL00002" data-adspot-key="y96uspez" data-source="www.hindutamil.in" data-refresh-rate="60" data-isclick-listener-attached="true" data-fcap="17053"></ins></p>
+          <!-- <div class="page-content "> -->
+			<!-- <div class="pull-to-refresh-layer">
+			   <div class="preloader"></div>
+			   <div class="pull-to-refresh-arrow"></div>
+			</div> -->
+          <div class="navbar no-shadow">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="left">
+                <a href="#" class="link icon-only panel-open">
+                  <i class="fa fw fa-bars"></i>
+                </a>
+              </div>
+              <div class="title center">
+                <img src="assets/images/logo.png">
+              </div>
+              <div class="right right-icons">
+                <a href="javascript:void(0);" class="link subscribe-icon premiumProduct"><i class="fa fa-cart-arrow-down"></i><span></span></a>
+                <a href="/search/" class="link"><i class="fa fa-search"></i></a>
+                <a href="/notifications/" class="link icon-only"><i class="fa fa-bell notificationCount"></i></a>
+                <!-- <a href="javascript:;" class="link icon-only getInAppPurchase"><i class="fa fa-bell"></i></a> -->
+				
+              </div>
+              <div class="subnavbar">
+                <div class="toolbar tabbar-scrollable toolbar-top tabbar news-tabs " >
+                  <!-- <div class="ptr-preloader">
+                    <div class="preloader"></div>
+                    <div class="ptr-arrow"></div>
+                  </div> -->
+                  <div class="toolbar-inner categoryMenu">
+                    
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          
+          <div class="toolbar tabbar tabbar-labels toolbar-bottom">
+            <div class="toolbar-inner">
+              <a href="/" class="tab-link tab-link-active">
+                <i class="icon fa fa-newspaper"></i>
+                <span class="tabbar-label">செய்திகள்</span>
+              </a>
+              <!-- <a href="/search/" class="tab-link">
+                <i class="icon fa fa-search"></i>
+                <span class="tabbar-label">தேட</span>
+              </a> -->
+              <a href="javascript:void(0)" class="tab-link showSubcription">
+                <i class="icon fa fa-book-reader"></i>
+                <span class="tabbar-label">சந்தாக்கள்</span>
+              </a>
+              <a id="getOtherPages" data-tab="#tab-9" data-id="9" data-tab-id="9" data-mid="1" data-cid="PaidStory" class="gold-color tab-link">
+                <i class="icon fa fa-star"></i>
+                <span class="tabbar-label">ப்ரீமியம்</span>
+              </a>
+
+              <a href="/e-subscription/" class="tab-link">
+                <i class="icon fa fa-book"></i>
+                <span class="tabbar-label">இ-நூலகம்</span>
+              </a>
+            </div>
+          </div>
+
+
+          
+            <div class="tabs-swipeable-wrap homeTabs infinite-scroll-content loadOtherPageDetail" id="swipeableTab" data-infinite-distance="50" @infinite="loadMore">
+			asfdsadfsdf
+			<p> <!-- JioAds slot - 2 -->
+		<ins id="ADSREL00002" data-adspot-key="g3yl927e" data-source="www.hindutamil.in" data-refresh-rate="60" data-isclick-listener-attached="true" data-fcap="17053"></ins></p>
+              <div id="tabs" class="tabs listTab ">
+              </div>
+            </div>
+
+        </div>
+
+        <div class="popup popup-tablet-fullscreen login-screen my-login-screen resetPopUp">
+          <div class="view">
+            <div class="page login-screen-page">
+              <div class="page-content login-screen-content">
+                <div class="close-screen"><a href="#" class="login-screen-close">&times;</a></div>
+                <div class="login-screen-title">
+                  <img src="assets/images/logo.png">
+                  <h6 class="form-heading">உள்நுழைய</h6>
+                </div>
+                <form id="userLogin">
+                  <div class="list">
+                    <ul>
+                      <li class="item-content item-input">
+                        <div class="item-media">
+                          <i class="icon fa fa-envelope"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title item-label">மின்னஞ்சல் முகவரி <span class="error">*</span> </div>
+                          <div class="item-input-wrap">
+                            <input type="text" name="username" id="user_name" placeholder="மின்னஞ்சல் முகவரி "/>
+							<input type="hidden" name="usercallback" id="usercallback" value="false"/>
+                            <span class="input-clear-button"></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="item-content item-input">
+                        <div class="item-media">
+                          <i class="icon fa fa-key"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title item-label">கடவுச்சொல் <span class="error">*</span></div>
+                          <div class="item-input-wrap">
+                            <input type="password" name="password" id="password" placeholder="Min 6 to 25 Characters" />
+                            <span class="eye loginEye"></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="list">
+                    <ul>
+                      <li>
+                        <a href="#" data-popup=".fpassword" class="popup-open link forgot-password">கடவுச்சொல்லை தவறவிடீர்களா?</a>
+                        <a href="#" class="button button-fill button-round button-block userLogin">உள்நுழை </a>
+                      </li>
+                    </ul>
+                    <div class="block-footer custom">
+                      <p><small>சமூக பக்கங்கள் மூலம் உள்நுழைய </small></p>
+                      <div class="row social-buttons">
+                        <div class="col-50">
+                           <a class="s_button google-plus loginViaGoogle">
+                            <i class="fab fa-google "></i> Google
+                          </a>
+                        </div>
+                        <div class="col-50">
+                          <a class="s_button facebook loginViaFacebook">
+                            <i class="fab fa-facebook"></i> Facebook
+                          </a>
+                        </div>
+                        <div class="col-100 showApplelogin" style="display: none;">
+                          <a class="s_button loginViaApple">
+                            <i class="fab fa-apple"></i> Sign in with Apple
+                          </a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <ul>
+                      <li class="">
+                        <a href="#" data-popup=".register" class="popup-open button button-fill button-round button-block color-green">கணக்கு இல்லையா ? பதிவுபெறுக</a>
+                      </li>
+                    </ul>
+                  </div>
+                </form>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+
+        <div class="popup popup-tablet-fullscreen register resetPopUp">
+			<div class="view">
+				<div class="page login-screen-page">
+					<div class="page-content login-screen-content">
+						<div class="close-screen"><a href="#" class="popup-close">&times;</a></div>
+						<div class="login-screen-title">
+							<img src="assets/images/logo.png">
+							<h6 class="form-heading">புதிய கணக்கு தொடங்க</h6>
+						</div>           
+						<form id="userRegister">
+						<div class="list">
+						  <ul>
+							<li class="item-content item-input">
+							  <div class="item-media">
+								<i class="icon fa fa-user"></i>
+							  </div>
+							  <div class="item-inner">
+								<div class="item-title item-label">பயனர் பெயர் <span class="error">*</span></div>
+								<div class="item-input-wrap">
+								  <input type="text" name="username" id="userName" placeholder="பயனர் பெயர் "/>
+								  <span class="input-clear-button"></span>
+								</div>
+							  </div>
+							</li>
+							<li class="item-content item-input">
+							  <div class="item-media">
+								<i class="icon fa fa-envelope"></i>
+							  </div>
+							  <div class="item-inner">
+								<div class="item-title item-label">மின்னஞ்சல் முகவரி <span class="error">*</span></div>
+								<div class="item-input-wrap">
+								  <input type="text" name="username" id="email" placeholder="மின்னஞ்சல் முகவரி"/>
+								  <span class="input-clear-button"></span>
+								</div>
+							  </div>
+							</li>
+							<li class="item-content item-input">
+							  <div class="item-media">
+								<i class="icon fa fa-key"></i>
+							  </div>
+							  <div class="item-inner">
+								<div class="item-title item-label">கடவுச்சொல் <span class="error">*</span></div>
+								<div class="item-input-wrap">
+								  <input type="password" name="password" id="reg_password" placeholder="Min 6 to 25 Characters"/>
+								  <span class="eye registerEye"></span>
+								</div>
+							  </div>
+							</li>
+							<li class="item-content item-input">
+							  <div class="item-media">
+								<i class="icon fa fa-key"></i>
+							  </div>
+							  <div class="item-inner">
+								<div class="item-title item-label">கடவுச்சொல்லை உறுதிப்படுத்தவும் <span class="error">*</span></div>
+								<div class="item-input-wrap">
+								  <input type="password" name="password" id="cpassword" placeholder="Min 6 to 25 Characters"/>
+								  <span class="eye registercEye"></span>
+								</div>
+							  </div>
+							</li>
+						  </ul>
+						</div>
+						<div class="list">
+						  <ul>
+							<li class="">
+							  <a href="#" class="button button-fill button-round button-block userRegister">பதிவு செய்</a>
+							</li>
+						  </ul>
+						</div>
+					 </form>
+					</div>
+				</div>
+			</div>
+        </div>
+
+        <div class="popup popup-tablet-fullscreen activation resetPopUp">
+			<div class="view">
+				<div class="page login-screen-page">
+					<div class="page-content login-screen-content">
+						<div class="close-screen"><a href="#" class="popup-close">&times;</a></div>
+						<div class="login-screen-title"><img src="assets/images/logo.png"></div>
+						  <form id="activateForm">
+							<div class="list">
+							  <ul>
+								<li class="item-content item-input">
+								  <div class="item-media">
+									<i class="icon fa fa-key"></i>
+								  </div>
+								  <div class="item-inner">
+									<div class="item-title item-label">Activation Code <span class="error">*</span></div>
+									<div class="item-input-wrap">
+									  <input type="tel" name="" id="activationCode" placeholder="Enter Activation Code"/>
+									  <span class="input-clear-button"></span>
+									</div>
+									<div>
+									  <a href="javascript:void(0)" class="resendOtp">Resend Activation Code</a>
+									</div>
+								  </div>
+								</li>
+							  </ul>
+							</div>
+							<div class="list">
+							  <ul>
+								<li>
+								  <a href="javascript:void(0)" data-popup=".activation" class="button button-fill button-round button-block activateAccount">Activate</a>
+								</li>
+							  </ul>
+							</div>
+						  </form>
+					</div>
+				</div>
+			</div>         
+        </div>
+
+        <div class="popup popup-tablet-fullscreen fpassword resetPopUp">
+			<div class="view">
+				<div class="page login-screen-page">
+					<div class="page-content login-screen-content">
+						<div class="close-screen"><a href="#" class="popup-close">&times;</a></div>
+						<div class="login-screen-title">
+						  <img src="assets/images/logo.png">
+						  <h6 class="form-heading">கடவுச்சொல்லை தவறவிடீர்களா?</h6>
+						</div>
+						  <form id="userForgotPassword">
+							<div class="list">
+							  <ul>
+								<li class="item-content item-input">
+								  <div class="item-media">
+									<i class="icon fa fa-envelope"></i>
+								  </div>
+								  <div class="item-inner">
+									<div class="item-title item-label">மின்னஞ்சல் முகவரி <span class="error">*</span></div>
+									<div class="item-input-wrap">
+									  <input type="text" name="username" id="f_email" placeholder="மின்னஞ்சல் முகவரி"/>
+									  <span class="input-clear-button"></span>
+									</div>
+								  </div>
+								</li>
+							   <!--  <li class="item-content item-input">
+								  <div class="item-media">
+									<i class="icon fa fa-key"></i>
+								  </div>
+								  <div class="item-inner">
+									<div class="item-title item-label">ஒரு முறை கடவுச்சொல்</div>
+									<div class="item-input-wrap">
+									  <input type="tel" name="" placeholder="Enter OTP">
+									  <span class="input-clear-button"></span>
+									</div>
+								  </div>
+								</li> -->
+							  </ul>
+							</div>
+							<div class="list">
+							  <ul>
+								<li class="popup-close">
+								  <a href="javascript:void(0)" class="button button-fill button-round button-block login-screen-close forgotPassword popup-close">உள்நுழை</a>
+								</li>
+							  </ul>
+							</div>
+						  </form>
+					</div>
+				</div>
+			</div>
+        </div>
+		
+		<div class="popup popup-tablet-fullscreen pdf-viewer">
+			<div class="view">
+				<div class="page">
+					<div id="book-readerrr"></div>
+				</div>
+			</div>
+        </div>
+
+        <div class="popup popup-tablet-fullscreen popup-version-update common-popup red-bg">
+            <img src="assets/images/logo.png" alt="" />
+            <h3>Update Version</h3>
+            <p class="version-message"></p>
+            <a class="button button-fill color-blue text-color-black mt10 update-version updateVersion">Update</a>
+        </div>
+		<div class="popup popup-tablet-fullscreen no-internet">
+		  <img src="assets/images/svg/signal.svg" alt="">
+		  <h3>Ohh!</h3>
+		  <p>No Internet connection found. Check your connection or <a href="" class="connection-try-again"><b>try again</b></a>.</p><br>
+		  <p>Click here to view </p>
+		  <a href="/saved/" class="button button-big button-fill color-blue offline-button">Offline stories</a>
+		  <a href="/e-library/" class="button button-big button-fill color-blue">E-Library</a>
+		  
+		</div>
+		<div class="popup popup-tablet-fullscreen under-maintenance">
+		  <div class="block">
+			<div class="logo">
+			  <img src="images/logo-fill.png" alt="">
+			</div>
+		  </div>
+		  <img src="images/maintenance.png" alt="">
+		  <h3>Ohh!</h3>
+		  <p>App server is under breakdown maintenance. Will be resumed shortly. <b>Inconvenience regretted</b>. </p>
+		</div>
+		
+		<div class="popup popup-tablet-fullscreen check_app_version" data="modal-in">
+		<div class="login-screen-content">
+		  <div class="block">		
+			<div class="logo popup-icon">
+			  <img src="assets/images/logo.png" alt="">
+			</div>
+			<div class="row">
+				 <div class="col-100 text-center p20">
+					<h2>Time to Update!</h2>
+					<p class="version_msg">We added lots of new features and fix some bugs to make your experience as much better as possible. </p>
+					<a href="#" class="button button-big button-fill color-blue app_version_update">Update App</a>
+				 </div>
+			</div>
+		  </div>
+		 </div>
+		</div>
+    <div class="sheet-modal sheet-modal-top notification-sheet-modal">
+      <div class="sheet-modal-inner">
+          <div class="card">
+            <div class="card-header " id="articleCategory">டெல்லி</div>
+            <div class="card-content ">
+              <div class="row" style="padding-top: 10px;">
+                  <div class="col-40 large-30 medium-30">
+                      <img id="articleImage" src="assets/images/no-img.jpg" width="44"/>
+                  </div>
+                  <div class="col-60 large-70 medium-70">
+                    <p id="articleDesc" style="margin: 0;font-size: 14px;">டெல்லி மற்றும் தேசிய தலைநகர் மண்டலங்களில் (என்சிஆர்) இன்று நள்ளிரவு முதல் வரும் 30-ம் தேதிவரை அனைத்து வகையான பட்டாசுகளை விற்பனை...</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="toolbar">
+        <div class="toolbar-inner">
+          <div class="left"><a class="link sheet-close" href="#">Close</a></div>
+          <div class="right"><a class="link openArticleDetail" data-aid="600005" href="javascript:void(0);">Read More</a></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Search -->
+    <div class="sheet-modal sheet-modal-top search-sheet">
+      <div class="sheet-modal-inner">
+          <div class="list no-hairlines-md block showInAppSearch">
+            <ul>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Title</div>
+                  <div class="item-input-wrap">
+                    <input type="text" placeholder="Enter title" id="inAppPurchaseTitles" class="inAppPurchaseTitles"/>
+                    <span class="input-clear-button"></span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="row">
+              <a href="#" class="col button button-fill color-gray inAppPurSearchClear sheet-close">Clear</a>
+              <a href="javascript:;" class="col button button-fill inAppPurSearchResult">Submit</a>
+            </div>
+          </div>
+      </div>
+      <!-- <div class="toolbar">
+        <div class="toolbar-inner">
+          <div class="left"><a class="link sheet-close" href="#">Close</a></div>
+          <div class="right"><a class="link" data-aid="" href="javascript:void(0);">Search</a></div>
+        </div>
+      </div> -->
+    </div>
+
+		
+      </div>      
+
+    </div>
+
+    </div>
+	
+	
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="assets/js/framework7.bundle.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery1.11.min.js"></script>
+  <script type="text/javascript" src="assets/js/site2.js"></script>
+	<script type="text/javascript" src="assets/js/in-app-purchase.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap-datepicker.min.js"></script>
+	<script src="assets/js/swipe.js"></script>
+	<!-- E-pub reader-->
+	<script type="text/javascript" src="assets/js/epub-lib/zip.min.js"></script>
+	<script type="text/javascript" src="assets/js/epub-lib/screenfull.min.js"></script>
+	<script type="text/javascript" src="assets/js/epub-lib/epub.js"></script>
+	<script type="text/javascript" src="assets/js/epub-lib/reader.js"></script>	
+	<!-- E-pub reader-->
+	<script src="assets/js/aes.js"></script>
+	<!-- PDF reader-->
+	<script src="assets/js/pdf-reader.js"></script>
+	<script src="assets/js/pdf-lib/pdf.compatibility.js"></script>
+	<script src="assets/js/pdf-lib/pdf.js"></script>
+	<script src="assets/js/pdf-lib/jquery.touchSwipe.js"></script>
+	<script src="assets/js/pdf-lib/jquery.panzoom.js"></script>
+	<script src="assets/js/pdf-lib/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="assets/js/pdf-lib/pinch-zoom.umd.js"></script>
+	<script src="assets/js/pdf-lib/jquery.touchPDF.js"></script>	
+	<!-- PDF reader-->
+	<script type="text/javascript" src="assets/js/moment.min.js"></script>
+	<script type="text/javascript" src="assets/js/social-login.js"></script>
+	<script type="text/javascript" src="assets/js/functions.js"></script>
+	<!-- <script type="text/javascript">googleHomeDfpAd();</script> -->
+	<script type="text/javascript" src="assets/js/sql.js"></script>
+	<script type="text/javascript" src="assets/js/my-app.js"></script>
+	<script type="text/javascript" src="assets/js/page-actions.js"></script>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/site.js"></script>
+	<script src="https://jioadsweb.akamaized.net/jioads/websdk/default/stable/jioAds.js"></script>
+	<script type="text/javascript">
+		JioAds.setConfiguration({ reqType: "prod"})
+        /*$(document).ready(function(){
+            alert('Page Ready');
+            $.ajax({
+                url:'https://lifotechnologies.com/apps/check-resp.php',
+                method:'GET',
+                //dataType:'json',
+                data:{},
+                success:function(res) {
+                    alert(res);
+                    // loader(2);
+                },error:function(err) {
+                    toaster('You are in Offline');
+                }
+            });
+        });*/
+	</script>
+  </body>
+</html>

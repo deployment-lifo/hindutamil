@@ -1,0 +1,209 @@
+.photo-browser-popup .photo-browser-caption{ pointer-events: auto !important;}
+.photo-browser-caption .share_news ul{ position: inherit!important; right: inherit!important; top: inherit!important; }
+/*.photo-browser-popup .photo-browser-caption{pointer-events: auto !important;}*/
+#mybook{width:100%;height:450px !important;}
+.pulling-refresh{margin-top: 50px;}
+.homepage-ad1{height: 300px !important;width:250px !important;margin: 0 auto !important;line-height: 300px;text-align: center;}
+.error{color: red;}
+html { overflow-y: scroll;-webkit-overflow-scrolling: touch; }
+.view .page,.panel.panel-left{margin-top:env(safe-area-inset-top,-50px) !important;margin-top:constant(safe-area-inset-top,-50px) !important}
+.toolbar-bottom{margin-bottom:env(safe-area-inset-top,-50px);}
+
+.comment-button { color:#00569d !important};
+
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */ 
+  .iOS-device { display:block; }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  /* CSS for other than iOS devices */ 
+  .iOS-device { display:none }
+}
+
+.no-internet{ background:#fff; text-align: center; padding: 30px;}
+.no-internet img { max-width: 120px; margin: 40% auto 10px; }
+.no-internet h3{ margin: 0 0 20px; font-size: 30px; color: #555;}
+.no-internet p{ color: #777; }
+.sheet-modal.notification-sheet-modal img{width: 100% !important;}
+.sheet-modal.notification-sheet-modal .sheet-modal-inner{height: 90% !important;}
+.sheet-modal.notification-sheet-modal .card{box-shadow: none !important;}
+.ios .notification-sheet-modal .toolbar,.ios .notification-sheet-modal .card-header{background-color:#00569d !important; color: #FFF !important;}
+.ios .sheet-modal-top{margin-top: env(safe-area-inset-top) !important;}
+.app-help-info{font-size: 10px;color: #FF0000 !important;text-transform: uppercase;}
+.photo-browser-caption{margin-bottom:env(safe-area-inset-bottom,80px);}
+.photo-browser-caption .share_news{position: absolute;top: -40px;left: 44%;z-index: 99999;-webkit-transform: translateX(-50%);
+transform: translateX(-50%)}
+.photo-browser .navbar-inner a.link.popup-close{font-size: 38px !important;}
+.item-input-wrap .eye {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    opacity: 0.5;
+    font-size: 25px;
+}
+.ios .login-screen-content{margin-top: env(safe-area-inset-top) !important;}
+.datepicker.datepicker-dropdown{position: absolute;background: #F7F7F7 !important;z-index: 99999 !important;}
+
+
+#upload-button {
+	width: 150px;
+	display: block;
+	margin: 20px auto;
+}
+
+#file-to-upload {
+	display: none;
+}
+
+#pdf-main-container {
+	/*width: 600px;*/
+	margin: 20px auto;
+}
+
+#pdf-loader {
+	display: none;
+	text-align: center;
+	color: #999999;
+	font-size: 13px;
+	line-height: 100px;
+	height: 100px;
+}
+
+#password-container {
+	padding: 50px 0;
+	box-sizing: border-box;
+	text-align: center;
+	display: none;
+}
+
+#pdf-password {
+	border: 1px solid #cccccc;
+	padding: 5px;
+	margin: 0 10px 0 0;
+	width: 100px;
+}
+
+#submit-password {
+	background: none;
+	border: 1px solid #cccccc;
+	padding: 4px;
+}
+
+#password-message {
+	text-align: center;
+	color: red;
+	margin: 10px 0 0 0;
+	font-size: 13px;
+}
+
+#pdf-contents {
+	display: none;
+}
+
+#pdf-meta {
+	overflow: hidden;
+	margin: 0 0 20px 0;
+}
+
+#pdf-buttons {
+	float: left;
+}
+
+#page-count-container {
+	float: right;
+}
+
+#pdf-current-page {
+	display: inline;
+}
+
+#pdf-total-pages {
+	display: inline;
+}
+
+#pdf-canvas {
+	border: 1px solid rgba(0,0,0,0.2);
+	box-sizing: border-box;
+}
+
+#page-loader {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	display: none;
+	color: #999999;
+	font-size: 13px;
+}
+.page-content.book-reader-page{background: #fff !important;}
+.pdf-toolbar .button{padding:0 2px !important;}
+.touchPDF > .pdf-outerdiv > .pdf-toolbar{text-align: center !important;}
+.pdf-toolbar .pdf-button .button i{font-size: 18px;}
+.pdf-toolbar .pdf-button .pdf-page-count{font-size: 20px;font-weight: bold;}
+
+.offline-button {padding : 0 9px !important;}
+.e-paper-track-button { display: flex;justify-content: space-evenly;margin-top: 10px; }
+.menu-float-icon {height: 48px !important; width: 48px !important;border-radius: 50% !important;}
+/*.menu-float-icon i{font-size: 16px !important;}*/
+/*.pt-0{padding-top:0 !important }
+.touchPDF > .pdf-outerdiv > div{top: inherit !important;}
+.pdf-toolbar{position: fixed !important;bottom: 0px !important;z-index: 9999 !important;background: #00569d !important;top: inherit !important;}*/
+.pinch-zoom-container {position:static !important;}
+/*.ios .subscription-page{padding-top:calc(var(--f7-page-navbar-offset,0px) + var(--f7-page-toolbar-top-offset,0px) + var(--f7-page-subnavbar-offset,0px) + var(--f7-page-searchbar-offset,0px) + var(--f7-page-content-extra-padding-top,0px)) !important}*/
+.ios .page-with-subnavbar .page-content{padding-top:88px !important}
+.pt-0{padding-top: 0 !important; }
+.touchPDF > .pdf-outerdiv > .pdf-viewer{box-shadow:none !important;}
+/*.touchPDF .pdf-toolbar{position: absolute !important;bottom: 0 !important;z-index: 9999 !important;top:unset !important;background: #06060680 !important;text-align: center !important;}
+.touchPDF .pdf-toolbar .viewer-controls{background: #0000 !important;color: #FFF !important;width: 50px !important;height: 50px !important;}
+.touchPDF .pdf-toolbar .pdf-page-count{color: #FFF !important;}
+.touchPDF .pdf-toolbar .pdf-button{min-width: 50px !important;height:  50px !important;}
+.touchPDF .pdf-toolbar .close-pdf-viewer{position: absolute;right: 10px;top: 10px;}
+@media (min-width: 767px) {
+	.touchPDF .pdf-toolbar{height: 60px !important;}
+	.touchPDF .pdf-toolbar .pdf-button{height: 60px !important;min-width: 60px !important;}
+	.pdf-toolbar .pdf-button .pdf-page-count{font-size: 26px;}
+	.pdf-toolbar .pdf-button .viewer-controls{font-size: 26px;width: 70px !important;height: 60px !important;}
+
+}
+.touchPDF .pdf-toolbar .showDownLoadButton{position: absolute;left: 10px;top: 0px; }*/
+.epub-viewer{width: 100% !important;height: 100% !important;margin-left: 0 !important;}
+.epub-toolbar{background: rgba(0,0,0,0.5) !important;}
+.epub-toolbar a{color: #FFF !important;width: 50% !important;font-size: 26px;}
+.pdf-toolbar{background: rgba(0,0,0,0.5) !important;}
+.pdf-toolbar a{color: #FFF !important;width: 14.2% !important;font-size: 26px;float: left;}
+.p-0{padding-top: 0 !important; }
+.tabactive-none .tab-link-highlight { display:none !important;}
+.breakWord {word-break:break-all;}
+@media (min-width: 710px) and (max-width:767px) {
+	.medium-50{width:50%!important}
+}
+
+/*.backNavigationIcon{font-size:25px!important;}*/
+.list.kamadenu-list img { max-height: 100px; }
+.list.kamadenu-list .item-text { margin-top: 40px; }
+.showLoginButton { text-align: center; }
+
+
+.proid{margin: 5px 0 0;}
+.proid label{color: #666;}
+.incase-page .cover-img img{height: 175px;}
+.incase-page .news-title{font-size: 18px;}
+.incase-page p.news-desc{font-size: 14px; margin: 5px 0;}
+.prdprices{font-size: 22px; margin: 6px 0 0;}
+.text-right{text-align: right;}
+
+/*.menu-float-icon{background: rgba(0, 86, 157, 0.8) !important; color: #fff !important;}*/
+.menu-float-icon{background: rgba(255, 255, 255, 0.2) !important; color: #00569d !important; border-color: #00569d !important;}
+.news-detail-card .premium-label{padding: 5px 10px !important; font-size: 10px !important;}
+.login-screen-page .item-input .item-inner .eye{font-size: 14px !important;}
+
+.right-icons .link{padding: 0 10px !important; width: inherit !important; min-width: inherit !important; display: flex; justify-content: end;}
+.right-icons .subscribe-icon{padding-right: 10px !important; min-width: 25px !important; position: relative;}
+.right-icons .subscribe-icon span{position: absolute; top: 12px; right: 5px; width: 8px; height: 8px; display: block; border-radius: 50%; background: #ff0a0a; animation: pulse 1s ease-in-out infinite alternate;}
+@keyframes pulse {
+    0%   { background: transparent; }
+    100% { background: #ff0a0a; }
+}
+.subscribe-icon img{height: 20px;}
+.bell-icon{width: 20px !important;}
+.controls-float {bottom: 65px !important;}

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="200219" id="com.news.hindutamil" version="2.1.9" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name>Hindu Tamil Thisai</name>
+    <description>
+        The Hindu Tamil Android App is very simple to use and offers the users highly interactive features with provisions to personalize the app according to their comfort. The Articles depicted in the Initial landing Screen is an aggregation of Top News and Most Viewed articles; this section serves the most engaging content.
+    </description>
+    <author email="customercare@thehindu.co.in" href="http://cordova.io">
+        Hindu Tamil Thisai
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+	<access origin="whatsapp:*" launch-external="yes" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+    <access origin="com.appid.hindutamil://*" /> 
+    <preference name="hostname" value="com.news.hindutamil" />
+    <preference name="scheme" value="https" />
+    <allow-navigation href="https://com.news.hindutamil/*" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+
+    <platform name="android">
+
+        <allow-intent href="market:*" />
+        <preference name="android-minSdkVersion" value="22" />
+        <preference name="android-targetSdkVersion" value="32" />
+        <preference name="multiDexEnabled" value="true" />
+        <resource-file src="google-services.json" target="google-services.json" />
+        <icon density="ldpi" src="res/icon/android/icon-36.png" />
+        <icon density="mdpi" src="res/icon/android/icon-48.png" />
+        <icon density="hdpi" src="res/icon/android/icon-72.png" />
+        <icon density="xhdpi" src="res/icon/android/icon-96.png" />
+        <icon density="xhdpi" src="res/icon/android/icon-144.png" />
+        <icon density="xhdpi" src="res/icon/android/icon-192.png" />
+        <icon density="xhdpi" src="res/icon/android/icon-512.png" />
+        <splash density="land-hdpi" src="res/screen/android/screen-hdpi-landscape.png" />
+        <splash density="land-ldpi" src="res/screen/android/screen-ldpi-landscape.png" />
+        <splash density="land-mdpi" src="res/screen/android/screen-mdpi-landscape.png" />
+        <splash density="land-xhdpi" src="res/screen/android/screen-xhdpi-landscape.png" />
+        <splash density="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
+        <splash density="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
+        <splash density="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
+        <splash density="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/logo-sp.png" />
+        <feature name="SocialSharing">
+            <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+        </feature>
+		<plugin name="cordova-plugin-googleplus" source="npm">
+		    <variable name="com.googleusercontent.apps.4090434366-co7urnma840lsffclld9a4if9jugp9ld" value="com.googleusercontent.apps.4090434366-co7urnma840lsffclld9a4if9jugp9ld" />
+		    <variable name="4090434366-f014pa526kjt5g89u447hkevcq0aor78" value="4090434366-f014pa526kjt5g89u447hkevcq0aor78.apps.googleusercontent.com" />
+        </plugin>
+        <preference name="xwalk64bit" value="true" />
+        <preference name="buildArchitecture" value="x86_64" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>

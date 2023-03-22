@@ -1,0 +1,105 @@
+<div class="page" data-name="elibrary-epub-viewer">
+  <div class="navbar no-shadow">
+    <div class="navbar-bg bg-color-white"></div>
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link icon-only back">
+          <i class="fa fw fa-arrow-left"></i>
+        </a>
+      </div>
+	  <div class="title bookTitle"></div>
+	      <div class="right">
+        <a href="#" class="link icon-only">&nbsp
+        </a>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="page-content">
+     
+      
+    <!---<div class="wow_toolbar"></div><div class="book_holder"><div id="book_container" class="book_section"><div id="bookView"></div></div></div>--->
+	<!---<div id="my_pdf_viewer">
+        <div id="canvas_container">
+            <canvas id="pdf_renderer"></canvas>
+        </div>
+ 
+        <div id="navigation_controls">
+            <button id="go_previous">Previous</button>
+            <input id="current_page" value="1" type="number"/>
+            <button id="go_next">Next</button>
+        </div>
+ 
+        <div id="zoom_controls">  
+            <button id="zoom_in">+</button>
+            <button id="zoom_out">-</button>
+        </div>
+    </div>-->
+	<div id="sidebar">
+        <div id="panels">
+          <!-- <input id="searchBox" placeholder="search" type="search"> -->
+
+          <!-- <a id="show-Search" class="show_view icon-search" data-view="Search">Search</a> -->
+          <a id="show-Toc" class="show_view icon-list-1 active" data-view="Toc">TOC</a>
+          <a id="show-Bookmarks" class="show_view icon-bookmark" data-view="Bookmarks">Bookmarks</a>
+          <!-- <a id="show-Notes" class="show_view icon-edit" data-view="Notes">Notes</a> -->
+
+        </div>
+        <div id="tocView" class="viewss">
+        </div>
+        <div id="searchView" class="viewss">
+          <ul id="searchResults"></ul>
+        </div>
+        <div id="bookmarksView" class="viewss">
+          <ul id="bookmarks"></ul>
+        </div>
+        <div id="notesView" class="viewss">
+          <div id="new-note">
+            <textarea id="note-text"></textarea>
+            <button id="note-anchor">Anchor</button>
+          </div>
+          <ol id="notes"></ol>
+        </div>
+      </div>
+      <div id="main">
+
+        <div id="titlebar">
+          <div id="opener">
+            <a id="slider" class=""><i class="fa fa-bars"></i>Menu</a>
+          </div>
+          <!---<div id="metainfo">
+            <span id="book-title"></span>
+            <span id="title-seperator">&nbsp;&nbsp;–&nbsp;&nbsp;</span>
+            <span id="chapter-title"></span>
+          </div>
+          <div id="title-controls">
+            <a id="bookmark" class="icon-bookmark-empty">Bookmark</a>
+            <a id="setting" class="icon-cog">Settings</a>
+            <a id="fullscreen" class="icon-resize-full">Fullscreen</a>
+          </div>--->
+        </div>
+
+        <div id="divider"></div>
+        <div id="prev" class="arrow">‹</div>
+        <div id="viewer" class="e-book-pinch-zoom"></div>
+        <div id="next" class="arrow">›</div>
+
+        <div id="loader"><img src="img/loader.gif"></div>
+      </div>
+      <div class="modal md-effect-1" id="settings-modal">
+          <div class="md-content">
+              <h3>Settings</h3>
+              <div>
+                  <p>
+                    <input type="checkbox" id="sidebarReflow" name="sidebarReflow">Reflow text when sidebars are open.
+                  </p>
+              </div>
+              <div class="closer icon-cancel-circled"></div>
+          </div>
+      </div>
+      <div class="overlay"></div>
+  
+  </div>
+  
+</div>

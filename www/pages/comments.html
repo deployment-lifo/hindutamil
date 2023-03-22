@@ -1,0 +1,92 @@
+<div class="page" data-name="comments">
+  <div class="navbar no-shadow">
+    <div class="navbar-bg bg-color-white"></div>
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link icon-only back">
+          <i class="fa fw fa-arrow-left"></i>
+        </a>
+      </div>
+      <div class="title">Comments</div>
+      <div class="right">
+        <a href="#" class="link icon-only"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <!-- <div class="block block-sm">
+      <a class="button button-fill button-round button-block sheet-open addComment" href="javascript:void(0)">Post Comment</a>
+    </div> -->
+    <div class="block block-sm postCommentInput">
+      
+      <!-- <div class="form-group">
+        <input type="text" class="form-control" name="" id="" placeholder="Enter Your Name">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" name="" id="" placeholder="Enter Email">
+      </div>
+      <h3>What is in your mind?</h3>
+      <div class="form-group">
+        <textarea class="form-control" name="" id="" rows="10" placeholder="Max 300 Charaters"></textarea>
+      </div>
+      <div class="form-group">
+        <button class="button button-fill button-block" href="#">Post Comment</button>
+      </div>
+      <div class="alert"><span class="text-color-green">Your Comment will be post after review.</span></div> -->
+    </div>
+    <div class="block block-sm" style="display: none;">
+      <div id="alert" class="alert"><span class="text-color-green">Your Comment will be post after review.</span></div>  
+    </div>
+    
+    <input type="hidden" value="0" id="aid"/>
+    <div class="list media-list mn">
+      <ul class="comments-list commentsList">
+        
+        <!-- <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-title-row">
+                <div class="item-title"><strong>ந.ஜெகதீசன்</strong></div>
+                <div class="item-after">2020-10-09 13:24</div>
+              </div>
+              <div class="item-text">இந்த முன்னெடுப்பையும் மத்திய அரசின் முடிவையும் வரவேற்கிறேன்
+              </div>
+            </div>
+            <div class="like-dislike">
+              <a href="#"><i class="fa fa-thumbs-up"></i> 01</a>
+              <a href="#"><i class="fa fa-thumbs-down"></i> 0</a>
+              <a href="#" class="reply"><i class="fa fa-reply"></i> Reply</a>
+            </div>
+          </div>
+        </li> -->
+      </ul>
+
+    </div>
+    <div class="sheet-modal replyComment">
+      <div class="toolbar">
+        <div class="toolbar-inner">
+          <div class="left"><a class="link sheet-close closeComment comment-button" href="javascript:void(0)">Close</a></div>
+          <div class="right"><a class="link sheet-close postForReply comment-button" href="javascript:void(0)">Post</a></div>
+        </div>
+      </div>
+      <div class="sheet-modal-inner">
+        <div class="block mn">
+          <h2>What is in your mind?</h2>
+          <ul class="emoji">
+            <!-- voted -->
+            
+          </ul>
+          <input type="hidden" id="comment_id" value="0"/>
+          <textarea class="form-control" name="" id="replyForComment" rows="10" placeholder="Max 300 Charaters"></textarea>
+          <div class="postCommentWithoutLogin">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+</div>
